@@ -1,16 +1,16 @@
 # test-tokenlabs
 
-[]  Cadastro de usuário;
-[]  Login para acesso ao sistema;
-[]  Adição de eventos;
-[]  Edição de eventos;
-[]  Remoção de eventos;
-[]  Listagem de eventos;
+[ ]  Cadastro de usuário;
+[ ]  Login para acesso ao sistema;
+[ ]  Adição de eventos;
+[ ]  Edição de eventos;
+[ ]  Remoção de eventos;
+[ ]  Listagem de eventos;
 
 Os atributos necessários para o evento são:
-[] Descrição;
-[] Hora de início;
-[] Hora de término;
+[ ]  Descrição;
+[ ] Hora de início;
+[ ] Hora de término;
 
 Obrigatório para CLT e opcional para estágio:
 - Não deixar sobrescrever eventos e caso ocorra, emitir um alerta para o usuário;

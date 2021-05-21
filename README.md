@@ -1,11 +1,11 @@
 # test-tokenlabs
 
-[] Cadastro de usuário;
-[] Login para acesso ao sistema;
-[] Adição de eventos;
-[] Edição de eventos;
-[] Remoção de eventos;
-[] Listagem de eventos;
+[]  Cadastro de usuário;
+[]  Login para acesso ao sistema;
+[]  Adição de eventos;
+[]  Edição de eventos;
+[]  Remoção de eventos;
+[]  Listagem de eventos;
 
 Os atributos necessários para o evento são:
 [] Descrição;

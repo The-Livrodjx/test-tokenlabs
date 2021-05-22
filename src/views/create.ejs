@@ -4,39 +4,109 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2970796f7d.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <title>Cadastro de Evento</title>
 </head>
 <style>
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-  input { 
-    max-width: 400px; 
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-  }
  .btn {
   display: flex;
   margin: 0 auto;
   margin-top: 10px;
  }
+ body {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+form {
+  width: 100%;
+  max-width: 47.75rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  background-color: #e9e9e9;
+}
 </style>
 <body>
-  <h1 class="text-center">Cadastro de Evento</h1>
-  <hr>
-  <form class="align-items-center">
-  <input type="text" name="name" id="name" placeholder="Nome do paciente" class="form-control">
-  <input type="email" name="email" id="email" placeholder="email@email.com" class="form-control mt-4">  
-  <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" class="form-control mt-4">
-  <input type="text" name="description" id="description" placeholder="Descrição" class="form-control mt-4">
-  <input type="date" name="date" id="date" placeholder="dd/mm/yy"class="form-control mt-4">
-  <input type="time" name="time" id="time" class="form-control mt-4">
-  <button type="button" class="btn btn-success">Agendar</button>
-</form>
+  <main class="container">
+    <section class="d-flex flex-column align-items-center justify-content-center vh-100 p-4">
+      <h2 class="my-4">Cadastro de Eventos</h2>
+      <form class="p-4 rounded" action="">
+        <div class="row">
+          <div class="form-group col-sm-12 col-md-6">
+            <label class="sr-only" for="name">Nome:</label>
+            <input
+              class="form-control mb-4"
+              type="name"
+              id="name"
+              placeholder="Nome do paciente"
+            />
+          </div>
+
+          <div class="form-group col-sm-12 col-md-6">
+            <label class="sr-only" for="email">Email:</label>
+            <input
+              class="form-control mb-4"
+              type="email"
+              id="email"
+              placeholder="exemplo@email.com"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-sm-12 col-md-5">
+            <label class="sr-only" for="cpf">CPF:</label>
+            <input
+              class="form-control mb-4"
+              type="number"
+              id="cpf"
+              placeholder="999.999.999-99"
+            />
+          </div>
+
+          <div class="form-group col-sm-12 col-md-5">
+            <label class="sr-only" for="name">Descrição:</label>
+            <input
+              class="form-control mb-4"
+              type="text"
+              name="description"
+              id="description"
+              placeholder="Descrição"
+            />
+          </div>
+
+          <div class="form-group col-sm-12 col-md-4">
+            <label class="sr-only" for="Data">Data:</label>
+            <input
+              class="form-control mb-4"
+              type="date"
+              name="date"
+              id="date"
+              placeholder="dd/mm/aa"
+            />
+          </div>
+        </div>
+        <div class="form-group col-sm-12 col-md-2">
+          <label class="sr-only" for="Hora">Hora:</label>
+          <input
+            class="form-control mb-4"
+            type="time"
+            name="hour"
+            id="hour"
+            
+          />
+        </div>
+      </div>
+
+        <!-- Buttons -->
+        <button type="submit" class="btn btn-success">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Limpar</button>
+      </form>
+    </section>
+  </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 <!-- JavaScript Bundle with Popper -->

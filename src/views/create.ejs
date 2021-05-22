@@ -1,92 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/2970796f7d.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <title>Cadastro de Evento</title>
-</head>
-<style>
- .btn {
-  display: flex;
-  margin: 0 auto;
-  margin-top: 10px;
- }
- body {
-  background-color: #fafafa;
-  font-family: 'Roboto', sans-serif;
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-}
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-form {
-  width: 100%;
-  max-width: 47.75rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-  background-color: #e9e9e9;
-}
-</style>
-<body>
-  <main class="container">
-    <section class="d-flex flex-column align-items-center justify-content-center vh-100 p-4">
-      <h2 class="my-4">Cadastro de Eventos</h2>
-      <form class="p-4 rounded" action="">
-        <div class="row">
-          <div class="form-group col-sm-12 col-md-6">
-            <label class="sr-only" for="name">Nome:</label>
-            <input
-              class="form-control mb-4"
-              type="name"
-              id="name"
-              placeholder="Nome do paciente"
-            />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href=" css/main.css" />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/2970796f7d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Cadastro de Evento</title>
+  </head>
+
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: "Roboto", sans-serif;
+    }
+
+    form {
+      width: 100%;
+      max-width: 47.75rem;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+      background-color: #e9e9e9;
+    }
+  </style>
+
+  <body>
+    <main class="container">
+      <section
+        class="
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-center
+          vh-100
+          p-4
+        "
+      >
+        <h2 class="my-4">Cadastro de Eventos</h2>
+        <form class="p-4 rounded" action="">
+          <div class="row">
+            <div class="form-group col-sm-12 col-md-6">
+              <label class="sr-only" for="name">Nome</label>
+              <input
+                class="form-control mb-4"
+                type="name"
+                id="name"
+                placeholder="Nome do paciente"
+                required
+              />
+            </div>
+
+            <div class="form-group col-sm-12 col-md-6">
+              <label class="sr-only" for="email">Email</label>
+              <input
+                class="form-control mb-4"
+                type="email"
+                id="email"
+                placeholder="exemplo@email.com"
+                required
+              />
+            </div>
           </div>
 
-          <div class="form-group col-sm-12 col-md-6">
-            <label class="sr-only" for="email">Email:</label>
-            <input
-              class="form-control mb-4"
-              type="email"
-              id="email"
-              placeholder="exemplo@email.com"
-            />
-          </div>
-        </div>
+          <div class="row">
+            <div class="form-group col-sm-12 col-md-6">
+              <label class="sr-only" for="cpf">CPF</label>
+              <input
+                class="form-control mb-4"
+                type="number"
+                id="cpf"
+                placeholder="999.999.999-99"
+                required
+              />
+            </div>
 
-        <div class="row">
-          <div class="form-group col-sm-12 col-md-5">
-            <label class="sr-only" for="cpf">CPF:</label>
-            <input
-              class="form-control mb-4"
-              type="number"
-              id="cpf"
-              placeholder="999.999.999-99"
-            />
-          </div>
-
-          <div class="form-group col-sm-12 col-md-5">
-            <label class="sr-only" for="name">Descrição:</label>
-            <input
-              class="form-control mb-4"
-              type="text"
-              name="description"
-              id="description"
-              placeholder="Descrição"
-            />
+            <div class="form-group col-sm-12 col-md-6">
+              <label class="sr-only" for="description">Descrição</label>
+              <input
+                class="form-control mb-4"
+                type="text"
+                name="description"
+                id="description"
+                placeholder="Descrição"
+                required
+              />
+            </div>
           </div>
 
-          <div class="form-group col-sm-12 col-md-4">
-            <label class="sr-only" for="Data">Data:</label>
-            <input
-              class="form-control mb-4"
-              type="date"
-              name="date"
-              id="date"
-              placeholder="dd/mm/aa"
-            />
+          <div class="row">
+            <div class="form-group col-sm-12 col-md-4">
+              <label class="sr-only" for="date">Data</label>
+              <input
+                class="form-control mb-4"
+                type="date"
+                name="date"
+                id="date"
+                required
+              />
+            </div>
+
+            <div class="form-group col-sm-12 col-md-3">
+              <label class="sr-only" for="hour">Hora</label>
+              <input
+                class="form-control mb-4"
+                type="time"
+                name="hour"
+                id="hour"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div
+            class="row d-flex align-items-center justify-content-around mx-1"
+          >
+            <button
+              type="submit"
+              class="btn btn-success col-sm-12 col-md-3 mb-4"
+            >
+              Enviar
+            </button>
+            <button
+              type="reset"
+              class="btn btn-secondary col-sm-12 col-md-3 mb-4"
+            >
+              Limpar
+            </button>
           </div>
         </div>
         <div class="form-group col-sm-12 col-md-2">
